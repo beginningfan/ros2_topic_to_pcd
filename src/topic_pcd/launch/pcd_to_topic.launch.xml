@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="topic_pcd" exec="pcd_to_topic" name="pcd_to_topic" output="screen">
+        <param name="pcd_filename" value="/home/fanliangliang/Desktop/test/1648720171.621aaa730.pcd"/>
+        <param name="topic_name" value="/sensing/lidar/top/rectified/pointcloud"/>
+    </node>
+</launch>

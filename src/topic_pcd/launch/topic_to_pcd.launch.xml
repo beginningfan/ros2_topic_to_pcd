@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node pkg="topic_pcd" exec="topic_to_pcd" name="topic_to_pcd" output="screen">
+        <param name="topic_name" value="/sensing/lidar/top/rectified/pointcloud"/>
+        <!-- pcd_filepath 必须已“/”结尾 -->
+        <param name="pcd_filepath" value="/home/fanliangliang/Desktop/test/"/>
+    </node>
+</launch>
